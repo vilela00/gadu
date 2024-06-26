@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img_logo {
+    padding: 10px;
+}
+
+header, #menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu_header {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.menu_header ul li {
+    list-style: none;
+}
+
+.menu_header ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+}
+
+.menu_header ul li a:hover {
+    color: rgb(107, 107, 107);
+}
+
+.banner_home a img {
+    width: 100%;
+}
