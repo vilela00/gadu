@@ -3,40 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./style.css">
     <title>Gadu Fashion E-Commerce</title>
 </head>
 <body>
-    <header>
-        <div class="img_logo">
-            <img src="./img/logo.png" width="100px" alt="">
-        </div>
-        <div class="menu_header">
-            <nav id="header">
-                <ul id="menu_header">
-                    <li><a href="">Men</a></li>
-                    <li><a href="">Woman</a></li>
-                    <li><a href="">Kids</a></li>
-                    <li><a href="">Shoes</a></li>
-                    <li><a href="">See All</a></li>
+    <header class="header">
+        <div class="header__menu">
+            <img src="./img/logo.png" width="100px" alt="" class="header__logo">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__menu_button"><a href="">Men</a></li>
+                    <li class="header__menu_button"><a href="">Woman</a></li>
+                    <li class="header__menu_button"><a href="">Kids</a></li>
+                    <li class="header__menu_button"><a href="">Shoes</a></li>
+                    <li class="header__menu_button"><a href="">See All</a></li>
                 </ul>
             </nav>
-        </div>
-        <div>
-            <input type="search" name="buscar" placeholder="search here">
-        </div>  
-        <div>
-           <a href=""><img src="./img/cart_icon.png" width="25px" height="25px" alt=""></a> 
-        </div>
-        <div>
-            <a href=""><img src="./img/user_icon.png" width="25px" height="25px" alt=""></a>
+            <input type="search" name="buscar" placeholder="search here" class="header__search">
+            <a href=""><img src="./img/cart_icon.png" width="25px" height="25px" alt="" class="header__cart_icon"></a> 
+            <a href=""><img src="./img/user_icon.png" width="25px" height="25px" alt="" class="header__login_icon"></a>
         </div>
     </header>
 
-    <section>
-        <div class="banner_home">
-            <a href=""><img src="./img/banner_home_1.png" alt=""></a>
-        </div>
+    <section class="banner_home">
+        <a href=""><img src="./img/banner_home_1.png" alt="" class="banner_home__teste"></a>
     </section>
 </body>
 </html>
