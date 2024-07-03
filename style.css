@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .header {
@@ -27,14 +28,13 @@
     align-items: center;
     gap: 5px;
     font-size: 20px;
-    padding: 20px;
-    list-style: none;
-    
+    padding: 20px;    
 }
 
 .header__list a {
     text-decoration: none;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .header__list a:hover {
@@ -43,15 +43,20 @@
 
 .header__menu_button {
     background-color: #000000;
-    border-radius: 60px;
-    padding: 8px;
-    margin: 6px;
-    width: 80px;
-    height: 20px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 100px;
+    height: auto;
     text-align: center;
+    vertical-align: middle;
 }
 
-.header__box-busca {
+.header__menu_button a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.header__box_busca {
     justify-content: end;
 }
 
@@ -59,6 +64,7 @@
     padding: 5px;
     border-radius: 3px;
     border: 1px solid lightgray;
+    height: 35px;
 }
 
 .banner_home img {
@@ -68,4 +74,59 @@
 .text_home {
     font-size: 20px;
     padding: 40px;
+}
+
+.footer {
+    background-color: #000000;
+    width: 100%;
+}
+
+.footer__cadastro_news {
+    padding: 20px;
+    text-align: center;
+    background-color: #2e2e2e;
+    height: auto;
+}
+
+.caixa_email {
+    width: 300px;
+    height: 25px;
+}
+
+.botao_news {
+    color: #ffffff #000000;
+    padding: 5px;
+}
+
+.footer__texto_news {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.menu_footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.footer__nav {
+    background-color: #000000;
+    width: 100%;
+    height: 100p%;
+    margin: 20px;
+}
+
+.footer__list {
+    width: 100%;
+    text-align: center;
+}
+
+.footer__list a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer__list a:hover {
+    color: rgb(107, 107, 107);
 }
