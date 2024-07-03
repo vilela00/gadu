@@ -71,6 +71,35 @@
     margin-top: 100px;
 }
 
+.headline_vitrine {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.vitrine_home {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.imagem_vitrine {
+    width: 30%;
+    height: auto;
+}
+
+.like_button_vitrine {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: #ffffff;
+}
+
 .text_home {
     font-size: 20px;
     padding: 40px;
