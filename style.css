@@ -3,15 +3,22 @@
     padding: 0;
 }
 
+.header {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+.header__logo {
+    padding: 10px;
+}
+
 .header__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5px;
-}
-
-.header__logo {
-    padding: 10px;
 }
 
 .header__list {
@@ -44,12 +51,21 @@
     text-align: center;
 }
 
+.header__box-busca {
+    justify-content: end;
+}
+
 .header__search {
     padding: 5px;
     border-radius: 3px;
     border: 1px solid lightgray;
 }
 
-.banner_home a img {
-    width: 100%;
+.banner_home img {
+    margin-top: 100px;
+}
+
+.text_home {
+    font-size: 20px;
+    padding: 40px;
 }
