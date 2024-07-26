@@ -4,23 +4,151 @@
     list-style: none;
 }
 
+/*DESKTOP FHD >1400px*/
+@media screen and (min-width:1400px) {
+    .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "header header"
+    "banner_home banner_home"
+    "headline_vitrine headline_vitrine"
+    "vitrine_home vitrine_home"
+    "headline_vitrine1 headline_vitrine1"
+    "vitrine_home1 vitrine_home1"
+    "banner2 banner2"
+    "headline_body headline_body"
+    "text_home banner_about1"
+    "banner_about2 text_home1"
+    "banner_rodape banner_rodape"
+    "footer footer"
+    ;
+    }
+}
+
+/*DESKTOP 1280 a 1399px*/
+@media screen and (min-width:1280px) and (max-width:1399px) {
+    .banner_about1 img {
+        display: none;
+    }
+    .banner_about2 img {
+        display: none;
+    }
+    .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "header header"
+    "banner_home banner_home"
+    "headline_vitrine headline_vitrine"
+    "vitrine_home vitrine_home"
+    "headline_vitrine1 headline_vitrine1"
+    "vitrine_home1 vitrine_home1"
+    "banner2 banner2"
+    "headline_body headline_body"
+    "text_home text_home"
+    "text_home1 text_home1"
+    "banner_rodape banner_rodape"
+    "footer footer"
+    ;
+    }
+}
+
+/*DESKTOP E TABLET*/
+@media screen and (min-width:769px) and (max-width:1279px) {
+    .banner_about1 img {
+        display: none;
+    }
+    .banner_about2 img {
+        display: none;
+    }
+    .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "header header"
+    "banner_home banner_home"
+    "headline_vitrine headline_vitrine"
+    "vitrine_home vitrine_home"
+    "headline_vitrine1 headline_vitrine1"
+    "vitrine_home1 vitrine_home1"
+    "banner2 banner2"
+    "headline_body headline_body"
+    "text_home text_home"
+    "text_home1 text_home1"
+    "banner_rodape banner_rodape"
+    "footer footer"
+    ;
+    }
+    .header {
+    flex-direction: column;
+    padding-bottom: 10px;
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width:481px) and (max-width:768px) {
+    .banner_about1 img {
+        display: none;
+    }
+    .banner_about2 img {
+        display: none;
+    }
+    .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 
+    "header header"
+    "banner_home banner_home"
+    "headline_vitrine headline_vitrine"
+    "vitrine_home vitrine_home"
+    "headline_vitrine1 headline_vitrine1"
+    "vitrine_home1 vitrine_home1"
+    "banner2 banner2"
+    "headline_body headline_body"
+    "text_home text_home"
+    "text_home1 text_home1"
+    "banner_rodape banner_rodape"
+    "footer footer"
+    ;
+    }
+    .header {
+    padding-bottom: 10px;
+    }
+    .header__list li {
+    display: none;
+    }
+    .headline_body p {
+        font-size: 26px;
+    }
+    .text_home p {
+        font-size: 16px;
+    }
+    .text_home1 p {
+        font-size: 16px;
+    }
+}
+
 .header {
-    background-color: #ffffff;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 100px;
-}
-
-.header__logo {
-    padding: 10px;
-}
-
-.header__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    grid-area: header;
+}
+
+.header__logo {
+    grid-area: logo;
+}
+
+.header__logo_img {
+    padding: 10px;
+    width: 100px;
 }
 
 .header__list {
@@ -30,6 +158,7 @@
     gap: 5px;
     font-size: 20px;
     padding: 20px;    
+    grid-area: opcoes_menu;
 }
 
 .header__list a {
@@ -58,7 +187,9 @@
 }
 
 .header__box_busca {
+    display: flex;
     justify-content: end;
+    grid-area: busca;
 }
 
 .header__search {
@@ -66,6 +197,10 @@
     border-radius: 3px;
     border: 1px solid lightgray;
     height: 35px;
+}
+
+.banner_home {
+    grid-area: banner_home;
 }
 
 .banner_home img {
@@ -77,13 +212,29 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    grid-area: headline_vitrine;
+}
+
+.headline_vitrine1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    grid-area: headline_vitrine1;
 }
 
 .vitrine_home {
-    text-align: center;
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    grid-area: vitrine_home;
+}
+
+.vitrine_home1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    grid-area: vitrine_home1;
 }
 
 .imagem_vitrine {
@@ -91,21 +242,101 @@
     height: auto;
 }
 
-.like_button_vitrine {
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    border-radius: 100px;
-    background-color: #ffffff;
+.imagem_vitrine:hover {
+    animation-name: blur;
+    animation-duration: 0.2s;
+    animation-iteration-count: 6;
+}
+
+@keyframes blur {
+    0% {
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+.imagem_vitrine1 {
+    width: 22%;
+    height: auto;
+}
+
+.imagem_vitrine1:hover {
+    transform: scale(1.03);
+}
+
+.banner2 {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    grid-area: banner2;
+}
+
+.banner2 img {
+    width: 100%;
+}
+
+.headline_body {
+    grid-area: headline_body
+}
+
+.headline_body1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .text_home {
     font-size: 20px;
-    padding: 40px;
+    padding: 20px;
+    text-align: center;
+    grid-area: text_home;
+}
+
+.text_home1 {
+    font-size: 20px;
+    padding: 12px;
+    text-align: center;
+    grid-area: text_home1;
+}
+
+.texto_about {
+    margin-top: 20px;
+    grid-area: texto_about;
+}
+
+.banner_about1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    grid-area: banner_about1;
+}
+
+.banner_about2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    grid-area: banner_about2;
+}
+
+.banner_rodape {
+    display: flex;
+    grid-area: banner_rodape;
+}
+
+.banner_rodape img {
+    width: 100%;
+    margin-top: 20px;
 }
 
 .footer {
     background-color: #000000;
+    grid-area: footer;
 }
 
 .footer__cadastro_news {
