@@ -63,26 +63,39 @@
         display: none;
     }
     .container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 
-    "header header"
-    "banner_home banner_home"
-    "headline_vitrine headline_vitrine"
-    "vitrine_home vitrine_home"
-    "headline_vitrine1 headline_vitrine1"
-    "vitrine_home1 vitrine_home1"
-    "banner2 banner2"
-    "headline_body headline_body"
-    "text_home text_home"
-    "text_home1 text_home1"
-    "banner_rodape banner_rodape"
-    "footer footer"
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "header header"
+        "banner_home banner_home"
+        "headline_vitrine headline_vitrine"
+        "vitrine_home vitrine_home"
+        "headline_vitrine1 headline_vitrine1"
+        "vitrine_home1 vitrine_home1"
+        "banner2 banner2"
+        "headline_body headline_body"
+        "text_home text_home"
+        "text_home1 text_home1"
+        "banner_rodape banner_rodape"
+        "footer footer"
     ;
     }
     .header {
-    flex-direction: column;
-    padding-bottom: 10px;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .header__list {
+        padding: 8px !important;
+    }
+    .header__list a {
+        font-size: 12px;
+        padding: 8px !important;
+    }
+    .header__box_busca {
+        display: none !important;
+    }
+    .header__logo_img {
+        width: 80px !important;
     }
 }
 
@@ -119,13 +132,13 @@
     display: none;
     }
     .headline_body p {
-        font-size: 26px;
+        font-size: 18px;
     }
     .text_home p {
-        font-size: 16px;
+        font-size: 12px;
     }
     .text_home1 p {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
@@ -156,8 +169,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 5px;
-    font-size: 20px;
-    padding: 20px;    
     grid-area: opcoes_menu;
 }
 
@@ -165,25 +176,15 @@
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
+    background-color: #000000;
+    border-radius: 25px;
+    padding: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header__list a:hover {
-    color: rgb(107, 107, 107);
-}
-
-.header__menu_button {
-    background-color: #000000;
-    border-radius: 40px;
-    padding: 10px;
-    width: 100px;
-    height: auto;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.header__menu_button a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    color: rgb(227, 228, 199);
 }
 
 .header__box_busca {
@@ -215,14 +216,6 @@
     grid-area: headline_vitrine;
 }
 
-.headline_vitrine1 {
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    grid-area: headline_vitrine1;
-}
-
 .vitrine_home {
     display: flex;
     justify-content: space-around;
@@ -230,16 +223,17 @@
     grid-area: vitrine_home;
 }
 
-.vitrine_home1 {
+.box_vitrine {
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    grid-area: vitrine_home1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem_vitrine {
-    width: 30%;
-    height: auto;
+    width: 400px;
+    height: 100%;
+    padding: 10px;
 }
 
 .imagem_vitrine:hover {
@@ -259,13 +253,70 @@
     }
 }
 
+.headline_vitrine1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    grid-area: headline_vitrine1;
+}
+
+.vitrine_home1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    grid-area: vitrine_home1;
+}
+
+.box_vitrine1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .imagem_vitrine1 {
-    width: 22%;
-    height: auto;
+    width: 350px;
+    height: 100%;
 }
 
 .imagem_vitrine1:hover {
     transform: scale(1.03);
+}
+
+.titulo_box_produto {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.preco_box_produto {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bt_add_cart_home {
+    background-color: rgb(108, 228, 118);
+    width: 75%;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.bt_buy_home {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    width: 75%;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 .banner2 {
