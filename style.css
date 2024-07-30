@@ -7,27 +7,108 @@
 /*DESKTOP FHD >1400px*/
 @media screen and (min-width:1400px) {
     .container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 
-    "header header"
-    "banner_home banner_home"
-    "headline_vitrine headline_vitrine"
-    "vitrine_home vitrine_home"
-    "headline_vitrine1 headline_vitrine1"
-    "vitrine_home1 vitrine_home1"
-    "banner2 banner2"
-    "headline_body headline_body"
-    "text_home banner_about1"
-    "banner_about2 text_home1"
-    "banner_rodape banner_rodape"
-    "footer footer"
-    ;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "header header"
+        "banner_home banner_home"
+        "headline_vitrine headline_vitrine"
+        "vitrine_home vitrine_home"
+        "headline_vitrine1 headline_vitrine1"
+        "vitrine_home1 vitrine_home1"
+        "banner2 banner2"
+        "headline_body headline_body"
+        "text_home banner_about1"
+        "banner_about2 text_home1"
+        "banner_rodape banner_rodape"
+        "footer footer"
+        ;
     }
 }
 
 /*DESKTOP 1280 a 1399px*/
 @media screen and (min-width:1280px) and (max-width:1399px) {
+    /*.banner_about1 img {
+        display: none;
+    }
+    .banner_about2 img {
+        display: none;
+    }*/
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "header header"
+        "banner_home banner_home"
+        "headline_vitrine headline_vitrine"
+        "vitrine_home vitrine_home"
+        "headline_vitrine1 headline_vitrine1"
+        "vitrine_home1 vitrine_home1"
+        "banner2 banner2"
+        "headline_body headline_body"
+        "text_home text_home"
+        "text_home1 text_home1"
+        "banner_rodape banner_rodape"
+        "footer footer"
+        ;
+    }
+}
+
+/*DESKTOP E TABLET*/
+@media screen and (min-width:769px) and (max-width:1279px) {
+    /*.banner_about1 img {
+        display: none;
+    }
+    .banner_about2 img {
+        display: none;
+    }*/
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "header header"
+        "banner_home banner_home"
+        "headline_vitrine headline_vitrine"
+        "vitrine_home vitrine_home"
+        "headline_vitrine1 headline_vitrine1"
+        "vitrine_home1 vitrine_home1"
+        "banner2 banner2"
+        "headline_body headline_body"
+        "banner_about1 banner_about1"
+        "text_home text_home"
+        "banner_about2 banner_about2"
+        "text_home1 text_home1"
+        "banner_rodape banner_rodape"
+        "footer footer"
+        ;
+    }
+    .header {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .header__list {
+        padding: 8px !important;
+    }
+    .header__list a {
+        font-size: 12px;
+        padding: 8px !important;
+    }
+    .header__box_busca {
+        display: none !important;
+    }
+    .header__logo_img {
+        width: 80px !important;
+    }
+    .banner_about1 {
+        padding-top: 20px;
+    }
+    .banner_about2 {
+        padding-top: 20px;
+    }
+}
+
+/*TABLET*/
+@media screen and (min-width:481px) and (max-width:768px) {
     .banner_about1 img {
         display: none;
     }
@@ -35,27 +116,44 @@
         display: none;
     }
     .container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 
-    "header header"
-    "banner_home banner_home"
-    "headline_vitrine headline_vitrine"
-    "vitrine_home vitrine_home"
-    "headline_vitrine1 headline_vitrine1"
-    "vitrine_home1 vitrine_home1"
-    "banner2 banner2"
-    "headline_body headline_body"
-    "text_home text_home"
-    "text_home1 text_home1"
-    "banner_rodape banner_rodape"
-    "footer footer"
-    ;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "header header"
+        "banner_home banner_home"
+        "headline_vitrine headline_vitrine"
+        "vitrine_home vitrine_home"
+        "headline_vitrine1 headline_vitrine1"
+        "vitrine_home1 vitrine_home1"
+        "banner2 banner2"
+        "headline_body headline_body"
+        "banner_about1 banner_about1"
+        "text_home text_home"
+        "banner_about2 banner_about2"
+        "text_home1 text_home1"
+        "banner_rodape banner_rodape"
+        "footer footer"
+        ;
+    }
+    .header {
+        padding-bottom: 10px;
+    }
+    .header__list li {
+        display: none;
+    }
+    .headline_body p {
+        font-size: 20px;
+    }
+    .text_home p {
+        font-size: 12px;
+    }
+    .text_home1 p {
+        font-size: 12px;
     }
 }
 
-/*DESKTOP E TABLET*/
-@media screen and (min-width:769px) and (max-width:1279px) {
+/*MOBILE*/
+@media screen and (max-width:480px) {
     .banner_about1 img {
         display: none;
     }
@@ -78,58 +176,13 @@
         "text_home1 text_home1"
         "banner_rodape banner_rodape"
         "footer footer"
-    ;
+        ;
     }
     .header {
-        flex-direction: column;
         padding-bottom: 10px;
     }
-    .header__list {
-        padding: 8px !important;
-    }
-    .header__list a {
-        font-size: 12px;
-        padding: 8px !important;
-    }
-    .header__box_busca {
-        display: none !important;
-    }
-    .header__logo_img {
-        width: 80px !important;
-    }
-}
-
-/*TABLET*/
-@media screen and (min-width:481px) and (max-width:768px) {
-    .banner_about1 img {
-        display: none;
-    }
-    .banner_about2 img {
-        display: none;
-    }
-    .container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 
-    "header header"
-    "banner_home banner_home"
-    "headline_vitrine headline_vitrine"
-    "vitrine_home vitrine_home"
-    "headline_vitrine1 headline_vitrine1"
-    "vitrine_home1 vitrine_home1"
-    "banner2 banner2"
-    "headline_body headline_body"
-    "text_home text_home"
-    "text_home1 text_home1"
-    "banner_rodape banner_rodape"
-    "footer footer"
-    ;
-    }
-    .header {
-    padding-bottom: 10px;
-    }
     .header__list li {
-    display: none;
+        display: none;
     }
     .headline_body p {
         font-size: 18px;
@@ -275,10 +328,10 @@
     align-items: center;
 }
 
-
 .imagem_vitrine1 {
     width: 350px;
     height: 100%;
+    padding: 5px;
 }
 
 .imagem_vitrine1:hover {
@@ -342,21 +395,23 @@
 
 .text_home {
     font-size: 20px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     grid-area: text_home;
 }
 
 .text_home1 {
     font-size: 20px;
-    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     grid-area: text_home1;
 }
 
 .texto_about {
-    margin-top: 20px;
     grid-area: texto_about;
+    padding-top: 5px;
 }
 
 .banner_about1 {
