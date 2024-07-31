@@ -4,7 +4,7 @@
     list-style: none;
 }
 
-/*DESKTOP FHD >1400px*/
+/*DESKTOP FHD >1400px
 @media screen and (min-width:1400px) {
     .container {
         display: grid;
@@ -24,44 +24,16 @@
         "footer footer"
         ;
     }
-}
+}*/
 
 /*DESKTOP 1280 a 1399px*/
 @media screen and (min-width:1280px) and (max-width:1399px) {
-    /*.banner_about1 img {
+    /*.about_us img {
         display: none;
     }
-    .banner_about2 img {
-        display: none;
-    }*/
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-areas: 
-        "header header"
-        "banner_home banner_home"
-        "headline_vitrine headline_vitrine"
-        "vitrine_home vitrine_home"
-        "headline_vitrine1 headline_vitrine1"
-        "vitrine_home1 vitrine_home1"
-        "banner2 banner2"
-        "headline_body headline_body"
-        "text_home text_home"
-        "text_home1 text_home1"
-        "banner_rodape banner_rodape"
-        "footer footer"
-        ;
-    }
-}
-
-/*DESKTOP E TABLET*/
-@media screen and (min-width:769px) and (max-width:1279px) {
-    /*.banner_about1 img {
+    .about_us img {
         display: none;
     }
-    .banner_about2 img {
-        display: none;
-    }*/
     .container {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -81,7 +53,48 @@
         "banner_rodape banner_rodape"
         "footer footer"
         ;
+    }*/
+    .banner_about1 {
+        padding-top: 20px;
     }
+    .banner_about2 {
+        padding-top: 20px;
+    }
+    .imagem_vitrine1 {
+        width: 300px !important;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+/*DESKTOP E TABLET*/
+@media screen and (min-width:769px) and (max-width:1279px) {
+    /*.about_us img {
+        display: none;
+    }
+    .about_us img {
+        display: none;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 
+        "header header"
+        "banner_home banner_home"
+        "headline_vitrine headline_vitrine"
+        "vitrine_home vitrine_home"
+        "headline_vitrine1 headline_vitrine1"
+        "vitrine_home1 vitrine_home1"
+        "banner2 banner2"
+        "headline_body headline_body"
+        "banner_about1 banner_about1"
+        "text_home text_home"
+        "banner_about2 banner_about2"
+        "text_home1 text_home1"
+        "banner_rodape banner_rodape"
+        "footer footer"
+        ;
+    }*/
     .header {
         flex-direction: column;
         padding-bottom: 10px;
@@ -105,17 +118,27 @@
     .banner_about2 {
         padding-top: 20px;
     }
+    .imagem_vitrine {
+        width: 230px !important;
+        height: 100%;
+        padding: 10px;
+    }
+    .imagem_vitrine1 {
+        width: 180px !important;
+        height: 100%;
+        padding: 10px;
+    }
 }
 
 /*TABLET*/
 @media screen and (min-width:481px) and (max-width:768px) {
-    .banner_about1 img {
+    .about_us img {
         display: none;
     }
-    .banner_about2 img {
+    .about_us img {
         display: none;
     }
-    .container {
+    /*.container {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-areas: 
@@ -134,7 +157,7 @@
         "banner_rodape banner_rodape"
         "footer footer"
         ;
-    }
+    }*/
     .header {
         padding-bottom: 10px;
     }
@@ -150,17 +173,33 @@
     .text_home1 p {
         font-size: 12px;
     }
+    .imagem_vitrine {
+        width: 100% !important;
+        height: 100%;
+        padding: 20px;
+    }
+    .imagem_vitrine1 {
+        width: 100% !important;
+        height: 100%;
+        padding: 20px;
+    }
+    .vitrine_home {
+        flex-direction: column;
+    }
+    .vitrine_home1 {
+        flex-direction: column;
+    }
 }
 
 /*MOBILE*/
 @media screen and (max-width:480px) {
-    .banner_about1 img {
+    .about_us img {
         display: none;
     }
-    .banner_about2 img {
+    .about_us img {
         display: none;
     }
-    .container {
+    /*.container {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-areas: 
@@ -177,7 +216,7 @@
         "banner_rodape banner_rodape"
         "footer footer"
         ;
-    }
+    }*/
     .header {
         padding-bottom: 10px;
     }
@@ -192,6 +231,22 @@
     }
     .text_home1 p {
         font-size: 12px;
+    }
+    .vitrine_home {
+        flex-direction: column;
+    }
+    .vitrine_home1 {
+        flex-direction: column;
+    }
+    .imagem_vitrine {
+        width: 100% !important;
+        height: 100%;
+        padding: 20px;
+    }
+    .imagem_vitrine1 {
+        width: 100% !important;
+        height: 100%;
+        padding: 20px;
     }
 }
 
@@ -387,6 +442,10 @@
     grid-area: headline_body
 }
 
+.about_us {
+    display: flex;
+}
+
 .headline_body1 {
     text-align: center;
     font-size: 40px;
@@ -420,6 +479,10 @@
     align-items: center;
     margin-bottom: 20px;
     grid-area: banner_about1;
+}
+
+.about_us img {
+    width: 100%;
 }
 
 .banner_about2 {
