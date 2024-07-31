@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/favicon.png">
-    <link rel="stylesheet" href="./style.css">
-    <title>Gadu Fashion E-Commerce - Contato</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/6336585fd2.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="./img/favicon.png">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Gadu Fashion E-Commerce</title>
+    </head>
 <body>
+    <div class="container-fluid">
     <header class="header">
-        <div class="header__menu">
-            <a href="./index.html"><img src="./img/logo.png" width="100px" alt="" class="header__logo"></a>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__menu_button"><a href="">Men</a></li>
-                    <li class="header__menu_button"><a href="">Woman</a></li>
-                    <li class="header__menu_button"><a href="">Kids</a></li>
-                    <li class="header__menu_button"><a href="">Shoes</a></li>
-                    <li class="header__menu_button"><a href="">See All</a></li>
-                </ul>
-            </nav>
-            <span class="header__box_busca">
-                <input type="search" name="buscar" placeholder="search here" class="header__search">
-                <a href=""><img src="./img/cart_icon.png" width="25px" height="25px" alt="" class="header__cart_icon"></a> 
-                <a href=""><img src="./img/user_icon.png" width="25px" height="25px" alt="" class="header__login_icon"></a>
-            </span>
+        <div class="header__logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="" class="header__logo_img"></a>
+        </div>  
+
+        <nav class="header__nav">
+            <ul class="header__list">
+                
+                <li><button type="button" class="btn btn-dark">MEN</button></li>
+                <li><button type="button" class="btn btn-dark">WOMAN</button></li>
+                <li><button type="button" class="btn btn-dark">KIDS</button></li>
+                <li><button type="button" class="btn btn-dark">SHOES</button></li>
+                <li><button type="button" class="btn btn-dark">See All</button></li>
+            </ul>
+        </nav>
+
+        <div class="header__box_busca">
+            <input type="search" name="buscar" placeholder="search here" class="header__search">
+            <button type="button" class="btn btn-secondary btn-sm botao_news"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <!--<a href=""><img src="./img/cart_icon.png" width="25px" height="25px" alt="" class="header__cart_icon"></a>-->
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a> 
+            <!--<a href=""><img src="./img/user_icon.png" width="25px" height="25px" alt="" class="header__login_icon"></a>-->
+            <a href=""><i class="fa-solid fa-user"></i></a>
         </div>
+
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Offcanvas navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+
     </header>
 
-    <section class="contato">
+    <!--<section class="contato">
         <div class="form_contato">
             <p class="titulo_contato">Entre em Contato Conosco</p>
             <form action="" class="form">
@@ -42,14 +94,93 @@
                 <input type="reset">
             </form>
         </div>
-    </section>
+    </section>-->
+    <div class="form_contato_boot">
+        <h2>Fill the Form to Get in Touch!</h2>
+    <form class="contato_boot">
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="nome">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="message" class="col-sm-2 col-form-label">Message</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="message">
+            </div>
+          </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Subject</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Question
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Compliment
+              </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Complaint
+                </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Accept terms and conditions
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-secondary">Send</button>
+      </form>
+      </div>
 
     <footer class="footer">
+    
+        <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Success!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Wow! You have subescribed at our Newsletter! Please check your inbox mail for updates.
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
         <div class="footer__cadastro_news">            
             <p class="footer__texto_news">Se inscreva na nossa Newsletter e fique por dentro das novidades!</p>
-                <form action="">
+                <form action="" class="container_news">
                     <input type="email" placeholder="e_mail" name="email" class="caixa_email">
-                    <button type="submit" class="botao_news"><strong>ENVIAR</strong></button>
+                    <button type="button" class="btn btn-secondary btn-sm botao_news" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        ENVIAR
+                      </button>
+                    <!--<button type="button" class="btn btn-secondary btn-sm botao_news">ENVIAR</button>-->
                 </form>
         </div>
         <div class="menu_footer">
@@ -71,7 +202,7 @@
                         <li class="footer__menu_button"><a href="">LGPD</a></li>
                         <li class="footer__menu_button"><a href="">Sobre Nós</a></li>
                         <li class="footer__menu_button"><a href="">Devoluções</a></li>
-                        <li class="footer__menu_button"><a href="">Contato</a></li>
+                        <li class="footer__menu_button"><a href="./contato.html">Contato</a></li>
                     </ul>
                 </nav>
             </span>
@@ -82,6 +213,7 @@
             </p>
         </div>
     </footer>
-
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
