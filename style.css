@@ -346,6 +346,8 @@ ul.header__list {
 .header__box_busca {
     display: flex;
     justify-content: end;
+    align-items: center;
+    gap: 5px;
     grid-area: busca;
 }
 
@@ -354,6 +356,14 @@ ul.header__list {
     border-radius: 3px;
     border: 1px solid lightgray;
     height: 35px;
+}
+
+i.fa-solid.fa-cart-shopping {
+    color: #000000;
+}
+
+i.fa-solid.fa-user {
+    color: #000000;
 }
 
 .banner_home {
