@@ -113,6 +113,10 @@ div.container-fluid {
         flex-direction: column;
         padding-bottom: 10px;
     }
+    div.header__logo {
+        display: flex;
+        justify-content: center;
+    }
     a.header__list {
         padding: 8px;
     }
@@ -120,11 +124,18 @@ div.container-fluid {
         font-size: 12px;
         padding: 8px;
     }
+    .btn-dark {
+        width: 90px !important;
+        font-size: 12px !important;
+    }
     div.header__box_busca {
         display: none;
     }
     img.header__logo_img {
         width: 80px;
+    }
+    .banner_home {
+        margin-top: 100px !important;
     }
     .banner_about1 {
         padding-top: 20px;
@@ -309,14 +320,16 @@ div.container-fluid {
     position: fixed;
     top: 0;
     width: 100%;
-    height: auto;
-    padding: 10px;
+    min-height: 80px;
+    padding-right: 10px;
+    padding-left: 10px;
     grid-area: header;
     z-index: 1;
 }
 
 .header__logo {
     grid-area: logo;
+    width: 25%;
 }
 
 .header__logo_img {
@@ -324,9 +337,13 @@ div.container-fluid {
     width: 100px;
 }
 
+.header__nav {
+    width: 50%;
+}
+
 .header__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 5px;
     grid-area: opcoes_menu;
@@ -358,6 +375,8 @@ ul.header__list {
 .header__box_busca {
     display: flex;
     align-items: center;
+    justify-content: end;
+    width: 25%;
     gap: 5px;
     grid-area: busca;
 }
@@ -386,7 +405,7 @@ i.fa-solid.fa-user {
 }*/
 
 .banner_home {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .headline_vitrine {
@@ -683,7 +702,8 @@ ul.footer__list {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 .contato_boot {
@@ -694,8 +714,4 @@ ul.footer__list {
 
 button.btn.btn-secondary {
     text-align: center;
-}
-
-input#message.form-control {
-    height: 300px;
 }
