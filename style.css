@@ -29,8 +29,8 @@ div.container-fluid {
         "footer footer"
         ;
     }*/
-    .navbar {
-        display: none !important;
+    .header .navbar {
+        display: none;
     }
 }
 
@@ -62,7 +62,7 @@ div.container-fluid {
         "footer footer"
         ;
     }*/
-    nav.navbar {
+    .header .navbar {
         display: none;
     }
     .banner_about1 {
@@ -71,7 +71,7 @@ div.container-fluid {
     .banner_about2 {
         padding-top: 20px;
     }
-    img.imagem_vitrine1 {
+    .box_vitrine1 .imagem_vitrine1 {
         width: 300px;
         height: 100%;
         padding: 10px;
@@ -106,36 +106,39 @@ div.container-fluid {
         "footer footer"
         ;
     }*/
-    nav.navbar {
+    .header .navbar {
         display: none;
     }
     .header {
         flex-direction: column;
         padding-bottom: 10px;
     }
-    div.header__logo {
+    .header .header__logo {
         display: flex;
         justify-content: center;
     }
-    a.header__list {
+    .header .header__list {
         padding: 8px;
     }
     .header__list a {
         font-size: 12px;
         padding: 8px;
     }
-    .btn-dark {
-        width: 90px !important;
-        font-size: 12px !important;
+    .header_nav .btn-dark {
+        width: 90px;
+        font-size: 12px;
     }
-    div.header__box_busca {
+    .header .header__box_busca {
         display: none;
     }
-    img.header__logo_img {
+    .header .header__logo_img {
         width: 80px;
     }
-    .banner_home {
-        margin-top: 100px !important;
+    .banner .banner_home {
+        margin-top: 120px;
+    }
+    .categoria .body_categoria {
+        margin-top: 120px;
     }
     .banner_about1 {
         padding-top: 20px;
@@ -721,4 +724,10 @@ ul.footer__list {
 
 button.btn.btn-secondary {
     text-align: center;
+}
+
+/*CATEGORIA*/
+
+.body_categoria {
+    margin-top: 80px;
 }
